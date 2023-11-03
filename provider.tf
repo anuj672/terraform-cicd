@@ -8,6 +8,7 @@ terraform {
   backend "s3" {
     bucket = "github-oidc-terraform-anuj"
     key    = "my-terraform-project"
+    region = "us-east-1"
   }
 }
 provider "aws" {
